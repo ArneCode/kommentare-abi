@@ -1,0 +1,31 @@
+.comment {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment .message {
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+
+.comment .author {
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+
+}
+
+body{
+  margin: 30px;
+}
