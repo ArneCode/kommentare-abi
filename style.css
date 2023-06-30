@@ -30,9 +30,12 @@ body{
   margin: 30px;
 }
 #giustinaKorrektur{
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
   margin: 10px 0;
   padding: 5px;
-  background-color: #aaaaaa;
+  background-color: #fdfdfd;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
