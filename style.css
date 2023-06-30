@@ -30,5 +30,10 @@ body{
   margin: 30px;
 }
 #giustinaKorrektur{
-display:none;
+  display:none;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #aaaaaa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
