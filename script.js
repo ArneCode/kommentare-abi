@@ -19,8 +19,12 @@ fetch('kommentare.json')
     let globalTitle = document.getElementsByTagName("title")[0];
     globalTitle.innerText = "Kommentare für " + name;
     let comments = cdata.Kommentar;
-
+    
     console.log("kommentare: ", comments);
+    //Korrektur zu Giustinas Jahrbuch-Zitat weil ich das falsch abetippt hab und sie sich eine richtigstellung wünscht
+    if(id==31){ //Ihre ID
+      console.log("Das ist die richtige Seite")
+    }
 
     // Get the element with the id "Kommentare"
     var kommentareElement = document.getElementById("kommentare");
