@@ -24,6 +24,7 @@ fetch('kommentare.json')
     //Korrektur zu Giustinas Jahrbuch-Zitat weil ich das falsch abetippt hab und sie sich eine richtigstellung wünscht
     if(id==31){ //Ihre ID
       console.log("Das ist die richtige Seite")
+      document.getElementByID("giustinaKorrektur").removeAttribute("hidden")
     }
 
     // Get the element with the id "Kommentare"
