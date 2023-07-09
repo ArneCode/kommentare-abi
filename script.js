@@ -12,6 +12,14 @@ fetch('kommentare.json')
     }
     console.log("id: ", id);
     id = parseInt(id);
+    //die links für nächste und vorherige Seite anpassen
+    if(id<0){
+        document.getElementById("backLink").addAttribute("hidden")
+    }else{
+      document.getElementById("backLink").removeAttribute("hidden")
+    }
+    document.getElementById("nextLink").href = "https://arnecode.github.io/kommentare-abi/?id="+(id+1)
+    document.getElementById("backLink").href = "https://arnecode.github.io/kommentare-abi/?id="+(id-1)
     let cdata = data.Kommentare[id];
     let name = cdata.kommentierterSchueler;
     let title = document.getElementById("title");
