@@ -40,3 +40,9 @@ body{
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+#nextButton{
+text-align:right;
+}
+#backButton{
+text-align:left;
+}
