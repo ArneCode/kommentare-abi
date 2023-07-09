@@ -13,10 +13,16 @@ fetch('kommentare.json')
     console.log("id: ", id);
     id = parseInt(id);
     //die links für nächste und vorherige Seite anpassen
-    if(id<0){
-        document.getElementById("backLink").addAttribute("hidden")
+    if(id<1){
+        document.getElementById("backLink").hidden = true
     }else{
-      document.getElementById("backLink").removeAttribute("hidden")
+      document.getElementById("backLink").hidden = false
+    }
+    
+    if(id>60){
+        document.getElementById("nextLink").hidden = true
+    }else{
+      document.getElementById("nextLink").hidden = false
     }
     document.getElementById("nextLink").href = "https://arnecode.github.io/kommentare-abi/?id="+(id+1)
     document.getElementById("backLink").href = "https://arnecode.github.io/kommentare-abi/?id="+(id-1)
